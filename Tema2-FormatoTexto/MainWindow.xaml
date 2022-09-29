@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema2_FormatoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_FormatoTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="Imagenes\lapiz.ico">
+    <Grid>
+        <TextBox x:Name="TextoTextBox" HorizontalAlignment="Left" Height="115" Margin="107,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" TextChanged="TextoTextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="107,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run FontWeight="Bold" Text="Texto"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="570,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"><Run Text="Color"/><Run Text=" deTexto"/></TextBlock>
+        <RadioButton x:Name="AzulRadioButton" Content="Azul" HorizontalAlignment="Left" Margin="687,86,0,0" VerticalAlignment="Top" Checked="AzulRadioButton_Checked" IsChecked="True"/>
+        <RadioButton x:Name="RojoRadioButton" Content="Rojo" HorizontalAlignment="Left" Margin="687,124,0,0" VerticalAlignment="Top" Checked="RojoRadioButton_Checked"/>
+        <RadioButton x:Name="VerdeRadioButton" Content="Verde" HorizontalAlignment="Left" Margin="687,158,0,0" VerticalAlignment="Top" Checked="VerdeRadioButton_Checked"/>
+        <CheckBox x:Name="NegritaCheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="385,127,0,0" VerticalAlignment="Top" FontWeight="Bold" Checked="NegritaCheckBox_Checked" Unchecked="NegritaCheckBox_Unchecked"/>
+        <CheckBox x:Name="CursivaCheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="477,127,0,0" VerticalAlignment="Top" FontStyle="Italic" Checked="CursivaCheckBox_Checked" Unchecked="CursivaCheckBox_Unchecked"/>
+        <TextBlock x:Name="TextoModTexBlock" HorizontalAlignment="Left" Margin="140,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="506" Foreground="#FF090A00" Background="#FFD9EE0D" TextDecorations="{x:Null}" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
